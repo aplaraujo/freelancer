@@ -1,3 +1,387 @@
-/*
- * Estilos de tu proyecto
- */
+:root{
+    --montserrat-font: 'Montserrat', sans-serif;
+    --lato-font: 'Lato', sans-serif;
+    --color-madson: #2c3e50;
+    --color-light-sea-green: #18bc9c;
+    --color-blue-charcoal: #212529;
+    --color-white: #ffffff;
+    --color-heather: #C1C3C4;
+    --color-snow: #fafafa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.margin-page{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    width: 100%;
+    background: var(--color-madson);
+}
+
+.nav-logo{
+    margin-left: 10px;
+    padding: 1em 0;
+}
+
+.nav-logo h1{
+    font-family: var(--lato-font);
+    font-weight: bolder;
+    color: var(--color-white);
+}
+
+.nav-link ul{
+    display: block;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-link ul li{
+    text-align: center;
+    padding: 15px 0;
+}
+
+.nav-link ul li a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: var(--montserrat-font);
+    font-weight: bolder;
+    font-size: 14px;
+    transition: .5s ease;
+}
+
+.nav-link ul li a:hover{
+    color: var(--color-light-sea-green);
+}
+
+.header-bg{
+    width: 100%;
+    background: var(--color-light-sea-green);
+}
+
+.header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-title h1{
+    margin-top: 30px;
+    color: var(--color-white);
+    font-family: var(--montserrat-font);
+    font-weight: bolder;
+}
+
+.header-division,
+.about-division{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-division-bar-left,
+.header-division-bar-right,
+.about-division-bar-left,
+.about-division-bar-right{
+    width: 100px;
+    height: 5px;
+    background: var(--color-white);
+}
+
+.header-division-bar-left,
+.about-division-bar-left{
+    margin-right: 15px;
+}
+
+.header-division-bar-right,
+.about-division-bar-right{
+    margin-left: 15px;
+}
+
+i.division-star,
+i.about-star{
+    color: var(--color-white);
+    font-size: 25px;
+}
+
+.header-job p{
+    color: var(--color-white);
+    font-family: var(--lato-font);
+}
+
+.portfolio{
+    margin: 30px 0;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.portfolio-title h2,
+.contact-title h2{
+    color: var(--color-blue-charcoal);
+    font-size: 30px;
+    font-family: var(--montserrat-font);
+    font-weight: bolder;
+}
+
+.portfolio-division,
+.contact-division{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-division-bar-left,
+.portfolio-division-bar-right,
+.contact-division-bar-left,
+.contact-division-bar-right{
+    height: 5px;
+    width: 100px;
+    height: 5px;
+    background: var(--color-madson);
+}
+
+.portfolio-division-bar-left,
+.contact-division-bar-left{
+    margin-right: 15px;
+}
+
+.portfolio-division-bar-right,
+.contact-division-bar-right{
+    margin-left: 15px;
+}
+
+.portfolio-star,
+.contact-star{
+    font-size: 25px;
+    color: var(--color-madson);
+}
+
+.portfolio-gallery img{
+    max-width: 100%;
+    height: 270px;
+    margin: 10px;
+}
+
+.about{
+    padding: 40px;
+    text-align: center;
+    background: var(--color-light-sea-green);
+}
+
+.about-title h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: var(--color-white);
+    font-family: var(--montserrat-font);
+}
+
+.about-button{
+    margin: 40px 0;
+}
+
+.about-button button{
+    padding: 15px 10px;
+    background: none;
+    border: 1.5px solid var(--color-white);
+    color: var(--color-white);
+    font-family: var(--lato-font);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .5s ease;
+}
+
+.about-button button:hover{
+    background: var(--color-white);
+    color: var(--color-light-sea-green);
+}
+
+.about-button .fa-download{
+    margin-right: 15px;
+}
+
+.first-text p,
+.second-text p{
+    margin: 20px 0;
+    color: var(--color-white);
+    font-family: var(--lato-font);
+    font-weight: bold;
+}
+
+.contact{
+    margin: 30px;
+    padding: 40px;
+}
+
+.contact-title,
+.contact-division{
+    text-align: center;
+}
+
+.contact-form{
+    width: 300px;
+    margin: 15px auto;
+}
+
+.contact-box{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 2px solid var(--color-snow);
+}
+
+.contact-box input,
+.contact-box textarea{
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: bold;
+}
+
+.contact-box textarea{
+    resize: none;
+    font-family: var(--lato-font);
+    font-weight: bold;
+    color: var(--color-heather);
+}
+
+::placeholder{
+    color: var(--color-heather);
+}
+
+.contact-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: var(--color-light-sea-green);
+    color: var(--color-white);
+    font-weight: bold;
+    font-weight: 20px;
+}
+
+footer{
+    text-align: center;
+}
+
+.footer-bg{
+    background: var(--color-blue-charcoal);
+}
+
+footer h3{
+    color: var(--color-white);
+    font-size: 25px;
+    font-family: var(--montserrat-font);
+}
+
+footer p{
+    color: var(--color-white);
+    font-family: var(--lato-font);
+}
+
+footer span{
+    color: var(--color-light-sea-green);
+}
+
+.footer-location,
+.footer-social,
+.footer-about{
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.info,
+.social,
+.footer-about p{
+    margin: 20px 0;
+}
+
+.social i{
+    padding: 5px 3px;
+    margin: 0 7px;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+.social i:hover{
+    background: var(--color-white);
+    color: var(--color-madson);
+}
+
+p.final{
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 768px){
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 0;
+    }
+
+    .nav-logo{
+        margin-left: 10px;
+    }
+
+    .nav-link ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav-link ul li{
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    .header-title h1{
+        font-size: 50px;
+    }
+
+    .header-job p{
+        font-size: 20px;
+    }
+
+    .about-text{
+        max-width: 700px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .first-text p,
+    .second-text p{
+        width: 270px;
+        text-align: left;
+    }
+
+    .contact-form{
+        width: 450px;
+    }
+
+    .footer-row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
